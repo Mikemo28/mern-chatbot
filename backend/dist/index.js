@@ -1,11 +1,11 @@
 import app from "./app.js";
 import { connectToDatabase } from "./db/connection.js";
-
 const PORT = process.env.PORT || 5000;
 connectToDatabase()
-  .then(() => {
+    .then(() => {
     app.listen(PORT, () => {
-      console.log(`Server open at port ${PORT}`);
+        console.log(`Server open at port ${PORT}`);
     });
-  })
-  .catch((err) => console.log(err));
+})
+    .catch((err) => console.log(err));
+//# sourceMappingURL=index.js.map
