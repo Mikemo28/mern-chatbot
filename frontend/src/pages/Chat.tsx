@@ -28,6 +28,7 @@ const Chat = () => {
     const newMessage: Message = { role: "user", content };
     setChatMessages((prev) => [...prev, newMessage]);
     const chatData = await sendChatRequest(content);
+    console.log(chatData);
     setChatMessages([...chatData.chats]);
     //
   };
